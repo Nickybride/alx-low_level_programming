@@ -25,5 +25,3 @@ else if (n == 0)
 }
 return (0);
 }
-gcc -Wall -Werror -Wextra -pedantic -std=gnu89 random_number.c -o random_number
-./random_number
