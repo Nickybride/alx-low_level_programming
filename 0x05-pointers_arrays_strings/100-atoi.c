@@ -1,3 +1,5 @@
+#include <stdio.h>
+#include <stdlib.h>
 #include "main.h"
 
 /**
@@ -10,7 +12,7 @@ int _atoi(char *s)
 {
 	int i, d, n, len, f, digit;
 
-	n = _atoi("98");
+	n = 0;
 	d = 0;
 	n = 0;
 	len = 0;
@@ -44,4 +46,3 @@ int _atoi(char *s)
 
 	return (n);
 }
-
