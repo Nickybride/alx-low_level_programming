@@ -1,24 +1,22 @@
 #include "main.h"
 /**
- * _strbrk - entry point
- * @s: input
- * @accept: input
+ * _strpbrk - entry point
+ * @s: the string to be searched.
+ * @accept: the string containing the acceptable bytes
  * Return: always 0 (success)
  */
-char *_strbrk(char *s, char *accept)
+char *_strpbrk(char *s, char *accept)
 {
-	int k;
+		int k;
 
-	while (*s)
-	{
-		for (k = 0; accept[k]; k++)
+		while (*s)
 		{
-		if (*s == accept[k])
-		return (s);
+			for (k = 0; accept[k]; k++)
+			{
+			if (*s == accept[k])
+			return (s);
+			}
+		s++;
 		}
-	s++;
-	}
-
-return ('\0');
+	return ('\0');
 }
-
